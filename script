@@ -1,0 +1,5 @@
+#/bin/bash
+
+cat square${1}.txt | sed 's_0_fasle_g' | sed 's_1_true_g' > tmp
+cat tmp > square${1}.txt
+rm tmp
